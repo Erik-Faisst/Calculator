@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Erik's first Calculator
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding >
+<div class="main">
+
+  <ion-input [(ngModel)]="inputValue" class="textview" type="string" pattern="(?<=[^\\d.])(?=\\d)|(?<=\\d)(?=[^\\d.]){3,10}" disabled placeholder="0"></ion-input>
+<table>
+  <tr>
+    <td><ion-button (click)="btnClicked('C')" class="button" color="light" value="C">C</ion-button></td>
+    <td><ion-button (click)="btnClicked('%')" class="button" color="light" value="%">%</ion-button></td>
+    <td><ion-button (click)="btnClicked('/')" class="button" color="light" value="/">/</ion-button></td>
+    <td><ion-button (click)="btnClicked('*')" class="button" color="light" value="x">x</ion-button></td>
+  </tr>
+  <tr>
+    <td><ion-button (click)="btnClicked('7')" class="button" color="light" value="7">7</ion-button></td>
+    <td><ion-button (click)="btnClicked('8')" class="button" color="light" value="8">8</ion-button></td>
+    <td><ion-button (click)="btnClicked('9')" class="button" color="light" value="9">9</ion-button></td>
+    <td><ion-button (click)="btnClicked('-')" class="button" color="light" value="-">-</ion-button></td>
+  </tr>
+  <tr>
+    <td><ion-button (click)="btnClicked('4')" class="button" color="light" value="4">4</ion-button></td>
+    <td><ion-button (click)="btnClicked('5')" class="button" color="light" value="5">5</ion-button></td>
+    <td><ion-button (click)="btnClicked('6')" class="button" color="light" value="6">6</ion-button></td>
+    <td><ion-button (click)="btnClicked('+')" class="button" color="light" value="+">+</ion-button></td>
+  </tr>
+  <tr>
+    <td><ion-button (click)="btnClicked('1')" class="button" color="light" value="1">1</ion-button></td>
+    <td><ion-button (click)="btnClicked('2')" class="button" color="light" value="2">2</ion-button></td>
+    <td><ion-button (click)="btnClicked('3')" class="button" color="light" value="3">3</ion-button></td>
+    <td rowspan=5><ion-button (click)="btnClicked('=')" class="button" color="light" value="=" style="height:160px;">=</ion-button></td>
+  </tr>
+  <tr>
+    <td colspan=2><ion-button (click)="btnClicked('0')" class="button" color="light" value="0" style="width:168px;">0</ion-button></td>
+    <td><ion-button (click)="btnClicked('.')" class="button" color="light" value=".">.</ion-button></td>
+  </tr>
+</table>
+
+
+  <p>@Copyright Erik Faisst</p>
+  </div>
+</ion-content>
