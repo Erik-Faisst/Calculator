@@ -1,0 +1,25 @@
+.btnCalculator{
+    width: 70px;
+    height: 70px;
+    font-size: 35px;
+    margin: 8px;
+    border: none;
+    background-color: #607d8b;
+    color: #607d8b;
+}
+.textview{
+  width: 300px;
+  margin: 8px;
+  font-size: 40px;
+  padding: 5px;
+  border: none;
+  color: white;
+}
+.main{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  background-color: linear-gradient(to right, red, blue);
+  height: 100%;
+}
