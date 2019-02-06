@@ -3,62 +3,62 @@
     <ion-button slot="start">
       <ion-menu-button></ion-menu-button>
       </ion-button>
-    <ion-title>second</ion-title>
+    <ion-title>Pizza Order</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-  <h1 id="personal-heading1" style="color:#000000;">
+  <h1 style="color:#000000;">
     Pizza Order
   </h1>
-  <form id="personal-form1">
-    <ion-item id="personal-input1">
+  <form>
+    <ion-item>
       <ion-label>
         Name
       </ion-label>
-      <ion-input type="text" placeholder=""></ion-input>
+      <ion-input type="text" required placeholder="Erik Faisst"></ion-input>
     </ion-item>
-    <ion-item id="personal-input2">
+    <ion-item>
       <ion-label>
         Email
       </ion-label>
-      <ion-input type="email" placeholder=""></ion-input>
+      <ion-input type="email" required placeholder="beistpiel@gmx.ch"></ion-input>
     </ion-item>
-    <ion-item id="personal-input3">
+    <ion-item>
       <ion-label>
         Time
       </ion-label>
-      <ion-input type="time" placeholder=""></ion-input>
+      <ion-input type="time"required></ion-input>
     </ion-item>
-    <ion-item id="personal-input4">
+    <ion-item>
       <ion-label>
         Date
       </ion-label>
-      <ion-input type="date" placeholder=""></ion-input>
+      <ion-input type="date" required></ion-input>
     </ion-item>
   </form>
-  <form id="personal-form2">
-    <ion-item name="margarita" id="personal-checkbox3">
+  <form>
+    <ion-item name="margarita">
       <ion-label>
         Margarita
       </ion-label>
       <ion-checkbox></ion-checkbox>
     </ion-item>
-    <ion-item name="prosciutto" id="personal-checkbox2">
+    <ion-item name="prosciutto">
       <ion-label>
         Prosciutto
       </ion-label>
       <ion-checkbox></ion-checkbox>
     </ion-item>
-    <ion-item name="hawaii" id="personal-checkbox4">
+    <ion-item name="hawaii">
       <ion-label>
         Hawaii
       </ion-label>
       <ion-checkbox></ion-checkbox>
     </ion-item>
   </form>
-  <form id="personal-form3">
-    <ion-item id="personal-select1">
+  <form>
+    <ion-item>
       <ion-label>
         Vigitarisch
       </ion-label>
@@ -75,7 +75,7 @@
       </ion-select>
     </ion-item>
   </form>
-  <button id="personal-button1" ion-button color="balanced" block>
+  <button ion-button color="balanced" (click)="gotToSignup()" block>
     <ion-icon name="cart"></ion-icon>
     Order
   </button>
