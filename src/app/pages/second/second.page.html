@@ -63,20 +63,20 @@
         Vigitarisch
       </ion-label>
       <ion-select name="">
-        <ion-option>
+        <ion-select-option>
           Nothing Select
-        </ion-option>
-        <ion-option>
+        </ion-select-option>
+        <ion-select-option>
           Lauch
-        </ion-option>
-        <ion-option>
+        </ion-select-option>
+        <ion-select-option>
           Tofu
-        </ion-option>
+        </ion-select-option>
       </ion-select>
     </ion-item>
   </form>
-  <button ion-button color="balanced" (click)="gotToSignup()" block>
+  <ion-button ion-button color="balanced" [routerLink]="['/menu/signup']" block>
     <ion-icon name="cart"></ion-icon>
     Order
-  </button>
+  </ion-button>
 </ion-content>

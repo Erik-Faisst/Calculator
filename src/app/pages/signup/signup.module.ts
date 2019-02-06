@@ -7,19 +7,12 @@ import { IonicModule } from '@ionic/angular';
 
 import { SignupPage } from './signup.page';
 
-const routes: Routes = [
-  {
-    path: '',
-    component: SignupPage
-  }
-];
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
-    IonicModule,
-    RouterModule.forChild(routes)
+    IonicModule
   ],
   declarations: [SignupPage]
 })

@@ -14,6 +14,7 @@ const routes: Routes = [
     children: [
       { path: 'first', loadChildren: '../first/first.module#FirstPageModule' },
       { path: 'second', loadChildren: '../second/second.module#SecondPageModule' },
+      { path: 'signup', loadChildren: '../signup/signup.module#SignupPageModule' },
     ]
   },
   {
